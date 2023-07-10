@@ -51,27 +51,27 @@
                     </section>
                     <section v-else>
                         <div class="table-responsive ">
-                            <table class="table table-bordered text-white-50 mx-auto mt-2 mb-5">
+                            <table class="table table-bordered text-white-50 mx-auto mt-2 mb-5 text-white bg-secondary rounded">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Description</th>
-                                        <th scope="col">Fecha y Hora</th>
-                                        <th scope="col">Imagen</th>
-                                        <th scope="col">Acciones</th>
+                                        <th class="text-white" scope="col">Id</th>
+                                        <th class="text-white" scope="col">Nombre</th>
+                                        <th class="text-white" scope="col">Description</th>
+                                        <th class="text-white" scope="col">Fecha y Hora</th>
+                                        <th class="text-white" scope="col">Imagen</th>
+                                        <th class="text-white" scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="" v-for="producto in productos">
-                                        <td scope="row">{{producto.id}}</td>
-                                        <td>{{producto.nombre}}</td>
-                                        <td>{{producto.descripcion}}</td>
-                                        <td>{{producto.time}}</td>
+                                        <td class="text-white" scope="row">{{producto.id}}</td>
+                                        <td class="text-white">{{producto.nombre}}</td>
+                                        <td class="text-white">{{producto.descripcion}}</td>
+                                        <td class="text-white">{{producto.time}}</td>
                                         <td>
                                             <img width="60" :src="producto.imagen" :alt="producto.nombre">
                                         </td>
-                                        <td>
+                                        <td class="text-white">
                                             <a class="btn btn-primary"
                                                 :href="'producto_update.html?id='+ producto.id">Editar</a>
                                             <button type="button" class="btn btn-danger"
