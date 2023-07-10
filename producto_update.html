@@ -40,27 +40,27 @@
 
                     <!-- form editar-->
                     <div class="container" id="app">
-                        <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                            <h2>Editar Banda </h2>
+                        <form style="background-color: rgb(52, 54, 56);margin:10px auto ; width: 400px; padding: 20px; border-radius: 20px;">
+                            <h2 class="text-white text-center">Editar Banda </h2>
                             <div class="mb-3">
-                                <label for="id">Id</label>
-                                <input type="number" name="id" id="id" disabled v-model="id">
+                                <label class="text-white" for="id">Id</label>
+                                <input class="form-control" type="number" name="id" id="id" disabled v-model="id">
                             </div>
                             <div class="mb-3">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre" v-model="nombre">
+                                <label class="text-white" for="nombre">Nombre</label>
+                                <input class="form-control" type="text" name="nombre" id="nombre" v-model="nombre">
                             </div>
                             <div class="mb-3">
-                                <label for="precio">Descripcion</label>
-                                <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+                                <label class="text-white" for="precio">Descripcion</label>
+                                <input class="form-control" type="text" name="descripcion" id="descripcion" v-model="descripcion">
                             </div>
                             <div class="mb-3">
-                                <label for="stock">Fecha y Hora </label>
-                                <input type="datetime-local" name="time" id="time" v-model="time">
+                                <label class="text-white" for="stock">Fecha y Hora </label>
+                                <input class="form-control" type="datetime-local" name="time" id="time" v-model="time">
                             </div>
                             <div class="mb-3">
-                                <label for="imagen">Imagen</label>
-                                <input type="text" name="imagen" id="imagen" v-model="imagen">
+                                <label class="text-white" for="imagen">Imagen</label>
+                                <input class="form-control" type="text" name="imagen" id="imagen" v-model="imagen">
                                 <img width="100" :src="imagen" alt="">
                             </div>
                             <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
